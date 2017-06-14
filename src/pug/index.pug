@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Dice Game
+    //- link(rel="shortcut icon" href="../favicon-32x32.ico" type="image/x-icon")
+    link(rel="icon" href="../favicon-32x32.ico" type="image/x-icon")
+    link(href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet")
+    link(href="assets/fonts/css/font-awesome.min.css" rel="stylesheet")
+    link(rel="stylesheet" href="assets/css/style.min.css")
+  body
+    .wrapper.clearfix
+      .player-0-panel.active
+        .player-name#name-0 Player 1
+        .player-score#score-0 43
+        .player-current-box
+          .player-current-label Current
+          .player-current-score#current-0 11
+
+      .player-1-panel
+        .player-name#name-1 Player 2
+        .player-score#score-1 72
+        .player-current-boxpl
+          .player-current-label Current
+          .player-current-score#current-1 0
+
+      button.btn-new
+        i(aria-hidden="true").fa.fa-check-circle-o &#32 New Game
+      button.btn-roll
+        i(aria-hidden="true").fa.fa-refresh &#32 Roll Dice
+      button.btn-hold
+        i(aria-hidden="true").fa.fa-arrow-circle-up &#32 Hold
+
+      
+      img(src="assets/img/dice-5.png", alt="Dice").dice#dice1
+      //- img(src="assets/img/dice-5.png", alt="Dice").dice#dice2
+      input(type="text", placeholder="Final score").final-score
+      .total-score
+        span#total0 0
+        span#total1 0
+
+      script(src="assets/js/app.min.js")

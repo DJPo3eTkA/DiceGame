@@ -1,0 +1,12 @@
+# Игнор-лист файлов проекта
+#http://webnotes.by/docs/raznoe/pravila-sintaksisa-fayla-gitignore
+# Игнорирование конкретного файла ТОЛЬКО в корне проекта
+/node_modules
+
+# Игнорирование по типу файла, будут игнорироваться в АБСОЛЮТНО всех директориях
+*.zip
+*.log
+*.pdf
+*.xls
+*.txt
+*.DS_Store
